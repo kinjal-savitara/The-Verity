@@ -29,41 +29,7 @@ export default function Home() {
   };
 
   
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-  const subject = encodeURIComponent("New Lead from Virtual Tour");
-  const body = encodeURIComponent(
-    `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}`
-  );
-
-  window.location.href = `mailto:kinjal@yopmail.com?subject=${subject}&body=${body}`;
-};
-
-  //  const handleWhatsAppClick = () => {
-  //   // 1. Open WhatsApp with message
-  //    window.open(
-  //           "https://wa.me/919227020701?text=Hi, I’m interested in the property tour visited from Aerial View by savitar Realty.",
-  //           "_blank"
-  //         )
-
-  //   // 2. Trigger PDF download
-  //   const link = document.createElement("a");
-  //   link.href = "https://housing-is-01.s3.amazonaws.com/6a32315a/6a513915bb8b26b940ec05e4e2ce102e/original.pdf";  
-  //   link.download = "Shree-kalash-savitar-realty.pdf";
-  //   link.click();
-  // };
-
-  const handleWhatsAppClick = () => {
-    // 1. Open WhatsApp with message
-     window.open(
-            "https://wa.me/919227020701?text=Hi, I’m interested in the property tour visited from Aerial View.",
-            "_blank"
-          )
-
-    // 2. Trigger PDF download
-   window.open("https://housing-is-01.s3.amazonaws.com/6a32315a/6a513915bb8b26b940ec05e4e2ce102e/original.pdf", "_blank");
-  };
+ 
   
   
   return (
@@ -94,26 +60,7 @@ const handleSubmit = (e) => {
         title="Virtual Tour"
       ></iframe>
 
-      {/* WhatsApp Button */}
-      // <button
-      //   onClick={handleWhatsAppClick}
-      //   style={{
-      //     position: "absolute",
-      //     left: "20px",
-      //     top: "80%", 
-      //     backgroundColor: "#25D366", // WhatsApp green
-      //     color: "white",
-      //     padding: "10px 8px",
-      //     borderRadius: "8px",
-      //     boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
-      //     border: "none",
-      //     cursor: "pointer",
-      //     zIndex: 9999,
-      //     fontWeight: "bold",
-      //   }}
-      // >
-      //   📄  Download Brochure
-      // </button>
+      
 
 
           {showImage && (
