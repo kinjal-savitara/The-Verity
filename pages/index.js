@@ -57,7 +57,7 @@ export default function Home() {
           display: "block",
         }}
         allow="vr;xr-spatial-tracking;gyroscope;accelerometer;magnetometer;"
-        title="Virtual Tour"
+        title="The Verity"
       ></iframe>
 
       
